@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,5 +16,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        /*$this->truncateTables([
+            'users'
+        ]);*/
+        //php artisan make:seeder NombreSeeder //crear seeder
+        //php artisan db:seed //ejecuta e inserta los datos en la bd
+        $this->call(UsersSeeder::class);
+        $this->call(CategoriesSeeder::class);
     }
 }

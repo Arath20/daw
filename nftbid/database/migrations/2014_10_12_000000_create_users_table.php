@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('alias');
             $table->string('image');
-            $table->string('rememberToken');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
