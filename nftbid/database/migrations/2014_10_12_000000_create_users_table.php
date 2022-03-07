@@ -8,9 +8,10 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *https://opensea.io/login?referrer=%2Faccount
      * @return void
      */
+
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {

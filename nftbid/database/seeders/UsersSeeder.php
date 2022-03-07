@@ -19,8 +19,8 @@ class UsersSeeder extends Seeder
         DB::table('users')->insert([
             'name'=>'Administrador 1',
             'email'=>'admin@gmail.com',
-            'password'=>Hash::make('123'),
-            'phone'=>'6361144690',
+            'password'=> Hash::make('123'),
+            'phone'=>'6361167434',
             'alias'=>'admin',
             'image'=>'default.jpg'
         ]);
@@ -28,9 +28,10 @@ class UsersSeeder extends Seeder
             'name'=>'Benito Pablo Juarez Garcia',
             'email'=>'beni07@gmail.com',
             'password'=>Hash::make('123'),
-            'phone'=>'6361144791',
+            'phone'=>'6361154545',
             'alias'=>'beni',
             'image'=>'default.jpg'
         ]);
+        
     }
 }

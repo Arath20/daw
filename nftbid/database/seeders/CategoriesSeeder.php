@@ -19,5 +19,6 @@ class CategoriesSeeder extends Seeder
         DB::table('categories')->insert(['category'=>'Music','img'=>'default.jpg']);
         DB::table('categories')->insert(['category'=>'Photography','img'=>'default.jpg']);
         DB::table('categories')->insert(['category'=>'Sports','img'=>'default.jpg']);
+
     }
 }
